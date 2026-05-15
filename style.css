@@ -10,7 +10,6 @@ body {
 
 nav {
     background-color: #FFE6FF;
-    border-radius: 20px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -20,6 +19,7 @@ nav {
 
 ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     gap: 20px;
     padding: 20px;
@@ -31,9 +31,9 @@ li {
     cursor: pointer;
 }
 
-li a{
+li a {
     color: inherit;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 li:hover {
@@ -139,4 +139,30 @@ li:hover {
 .btn:hover {
     background-color: #BE77FF;
     color: white;
+}
+
+.divE {
+    background-color: #7B7B7B;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.skb {
+    color: red;
+    font-size: 18px;
+    border-style: outset;
+    margin: 20%;
+    background-color:#FFD2D2 ;
+
+}
+
+.money{
+    font-size: 20px;
 }

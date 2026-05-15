@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Commission</title>
     <script src="jquery-4.0.0.js"></script>
-    <script src="Homepage.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Noto+Sans+TC:wght@100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Homepage.js"></script>
+
 </head>
 
 <body>
@@ -39,53 +40,45 @@
     <div class="divB">
         <div class="textB">
             <img src="1.png">
-            <p>作者A</p>
-            <p>正在接取委託</p>
-            <p>擅長:女生 Q版</p>
-            <p>$800~</p>
+            <p class="name">作者A</p>
+            <p class="skb">開啟委託</p>
+            <p class="point">擅長:女生 Q版</p>
+            <p class="money">$800~</p>
             <button class="btn">聯絡</button>
         </div>
 
 
         <div class="textB">
             <img src="2.png">
-            <p>作者B</p>
-            <p>正在接取委託</p>
-            <p>擅長:男性 帥氣畫風</p>
-            <p>$1000~</p>
+            <p class="name">作者B</p>
+            <p class="skb">開啟委託</p>
+            <p class="point">擅長:男性 帥氣畫風</p>
+            <p class="money">$1000~</p>
             <button class="btn">聯絡</button>
-
-
         </div>
         <div class="textB">
             <img src="3.png">
-            <p>作者C</p>
-            <p>正在接取委託</p>
-            <p>擅長:場景 </p>
-            <p>$800~</p>
+            <p class="name">作者C</p>
+            <p class="skb">開啟委託</p>
+            <p class="point">擅長:場景 </p>
+            <p class="money">$800~</p>
             <button class="btn">聯絡</button>
-
-
         </div>
         <div class="textB">
             <img src="3.png">
-            <p>作者C</p>
-            <p>正在接取委託</p>
-            <p>擅長:場景 </p>
-            <p>$800~</p>
+            <p class="name">作者C</p>
+            <p class="skb">開啟委託</p>
+            <p class="point">擅長:場景 </p>
+            <p class="money">$800~</p>
             <button class="btn">聯絡</button>
-
-
         </div>
         <div class="textB">
             <img src="3.png">
-            <p>作者C</p>
-            <p>正在接取委託</p>
-            <p>擅長:場景 </p>
-            <p>$800~</p>
+            <p class="name">作者C</p>
+            <p class="skb">開啟委託</p>
+            <p class="point">擅長:場景 </p>
+            <p class="money">$800~</p>
             <button class="btn">聯絡</button>
-
-
         </div>
     </div>
 
@@ -116,8 +109,30 @@
         </div>
 
     </div>
+
     <p class="textD">委託評價</p>
-    <div class="divE"></div>
+    <div class="divE">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="1.png" alt="">></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </div>
 
 
 
