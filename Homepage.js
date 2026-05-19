@@ -1,6 +1,12 @@
 $(function () {
     $(".btn").click(function () {
-        alert("收到");
+        swal("已成功寄信", "等待繪師收到回覆", "success");
+    })
+})
+
+$(function () {
+    $(".btnNO").click(function () {
+        swal("未開放委託", "等待繪師重新開啟", "error");
     })
 })
 
@@ -26,4 +32,10 @@ $(function () {
             el: '.swiper-scrollbar',
         },
     });
+})
+
+$(function () {
+    $(".click").click(function () {
+        $(".show")[0].showModal()
+    })
 })
