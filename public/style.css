@@ -213,3 +213,22 @@ li:hover {
 .money {
     font-size: 20px;
 }
+
+footer {
+    background-color: #FFE6FF;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.footer p:hover{
+    color: #6F00D2;
+}

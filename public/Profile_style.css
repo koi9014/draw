@@ -104,3 +104,65 @@ li:hover {
 
 
 }
+
+.footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.footer p:hover {
+    color: #6F00D2;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social img {
+    width: 20%;
+    padding: 5px;
+
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.button1 button {
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.button1 button:hover {
+    background-color: #7B7B7B;
+    color: white;
+}
+
+.revise {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #66B3FF;
+    color: white;
+}
+
+.revise:hover {
+
+    background-color: #004B97;
+
+}
