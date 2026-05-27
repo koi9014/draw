@@ -96,10 +96,18 @@ li:hover {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 }
 
 .card img {
     border: 2px solid #7B7B7B;
+    border-radius: 5px;
+
+
+}
+footer {
+    background-color: #FFE6FF;
+    width: 100%;
     border-radius: 5px;
 
 
@@ -111,7 +119,6 @@ li:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 
 .footer p:hover {

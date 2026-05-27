@@ -1,0 +1,88 @@
+body {
+    font-family: "Chiron GoRound TC", sans-serif;
+    margin-top: 92px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+nav {
+
+    background-color: #FFE6FF;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    padding: 20px;
+}
+
+li {
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+li a {
+    text-decoration: none;
+
+}
+
+li:hover {
+    color: #7B7B7B;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15%;
+}
+
+
+label,
+input {
+    display: block;
+}
+
+#tb:valid {
+    background-color: lightgreen;
+}
+
+#tb:invalid {
+    background-color: pink;
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFE6FF;
+}
+
+.footer p:hover {
+    color: #6F00D2;
+}
