@@ -37,7 +37,7 @@ app.put('/profile/:id', (req, res) => {
     const todos = JSON.parse(data || '[]');
     const todo = todos.find(item => item.id == id);
 
-  if (!todo) {
+    if (!todo) {
         return res.status(404).json({ message: "not found" });
     }
 
@@ -49,3 +49,22 @@ app.put('/profile/:id', (req, res) => {
     res.json(todo);
 })
 
+app.post('/profile', (req, res) => {
+    const filePath = path.join(__dirname, "users.json");
+    const data = fs.readFileSync(filePath, "utf-8"
+    );
+    const users = JSON.parse(data)
+    const { email, password } = req.body
+    const user = users.find(u => u.email === email && u.password === password)
+    if (user) {
+    res.json({
+      success: true,
+      message: "登入成功"
+    })
+  } else {
+    res.json({
+      success: false,
+      message: "帳號或密碼錯誤"
+    })
+  }
+})

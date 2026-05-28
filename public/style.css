@@ -112,7 +112,7 @@ li:hover {
 
 .divC {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fill, 200px);
     gap: 50px;
     justify-content: center;
 
@@ -139,6 +139,7 @@ li:hover {
 
 .divD {
     background-color: #ECECFF;
+    padding-bottom: 10px;
 }
 
 .btn {
@@ -162,7 +163,6 @@ li:hover {
     width: 60%;
     height: auto;
     background-color: white;
-
 }
 
 .swiper-slide {
@@ -229,6 +229,11 @@ footer {
     width: 100%;
 
 }
-.footer p:hover{
+
+.footer p:hover {
     color: #6F00D2;
+}
+
+.divE {
+    padding-bottom: 30px;
 }
