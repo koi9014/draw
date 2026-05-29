@@ -1,0 +1,43 @@
+body {
+    font-family: "Chiron GoRound TC", sans-serif;
+    margin-top: 92px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.logout {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    flex-direction: column;
+
+}
+
+
+.footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFE6FF;
+}
+
+.footer p:hover {
+    color: #6F00D2;
+}
+
+.name{
+    font-size: 48px;
+}
+
+.logout-btn {
+    border-style: none;
+    padding: 10px 20px;
+    font-size: 24px;
+
+}

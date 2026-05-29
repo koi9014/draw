@@ -14,6 +14,10 @@ $(function () {
 
             success: function (res) {
                 swal("已成功登入", "歡迎回來", "success");
+                localStorage.setItem("isLogin", "true")
+                setTimeout(() => {
+                    window.location.href = "index.html"
+                }, 2000)
 
 
             },
@@ -28,3 +32,14 @@ $(function () {
     })
 })
 
+$(function(){
+    $(".logout-btn").click(function(){
+        swal("已成功登出","", "success");
+                localStorage.setItem("isLogin", "false")
+                setTimeout(() => {
+                    window.location.href = "index.html"
+                }, 2000)
+
+
+    })
+})
