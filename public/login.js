@@ -13,7 +13,7 @@ $(function () {
             }),
 
             success: function (res) {
-                swal("已成功登入", "歡迎回來", "success");
+                swal("已成功登入", "2秒後自動跳轉", "success");
                 localStorage.setItem("isLogin", "true")
                 setTimeout(() => {
                     window.location.href = "index.html"
@@ -34,7 +34,7 @@ $(function () {
 
 $(function(){
     $(".logout-btn").click(function(){
-        swal("已成功登出","", "success");
+        swal("已成功登出","2秒後自動跳轉", "success");
                 localStorage.setItem("isLogin", "false")
                 setTimeout(() => {
                     window.location.href = "index.html"
