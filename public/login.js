@@ -2,6 +2,8 @@ $(function () {
     $(".btn").click(function () {
         const newEmail = $(".email").val();
         const newPassword = $(".password").val();
+        let redirected = false;
+
 
         $.ajax({
             url: "http://localhost:5000/profile",
@@ -32,13 +34,13 @@ $(function () {
     })
 })
 
-$(function(){
-    $(".logout-btn").click(function(){
-        swal("已成功登出","2秒後自動跳轉", "success");
-                localStorage.setItem("isLogin", "false")
-                setTimeout(() => {
-                    window.location.href = "index.html"
-                }, 2000)
+$(function () {
+    $(".logout-btn").click(function () {
+        swal("已成功登出", "2秒後自動跳轉", "success");
+        localStorage.setItem("isLogin", "false")
+        setTimeout(() => {
+            window.location.href = "index.html"
+        }, 2000)
 
 
     })
